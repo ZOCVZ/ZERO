@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Waterproof Mousepad</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #000 0%, #050505 100%);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 28px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      border-bottom: 1px solid #111;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    header nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: #aaa;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    header nav a:hover { color: #fff; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .product-thumb {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+
+    .product-thumb:hover {
+      transform: scale(1.02);
+    }
+
+    .product-details h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .product-details p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 24px;
+    }
+
+    .features {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 15px;
+      transition: background 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      background: #000;
+    }
+
+    footer {
+      border-top: 1px solid #eee;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      cursor: zoom-out;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .product {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+      padding: 26px;
+      border-radius: 18px;
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: #222;
+      color: #fff;
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .learn {
+      color: #ffd400;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .learn:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="font-weight:800;letter-spacing:3px;">ZERO</h1>
+    <nav>
+      <a href="#">Product</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+  <section class="grid">
+  <a href="#product" class="card">
+    <span class="badge">NEW</span>
+    <img src="unnamed.jpg" alt="ZERO Mousepad" />
+    <h3 style="font-size:18px;letter-spacing:1px;">ZERO MOUSEPAD<br><span style="font-size:13px;color:#aaa;">SIZE 31.5 × 15.7 IN</span></h3>
+    <span class="learn">LEARN MORE</span>
+  </a>
+
+  <a href="#product2" class="card">
+    <span class="badge">NEW</span>
+    <img src="Gemini_Generated_Image_ekwh1pekwh1pekwh.png" alt="ZERO White Mousepad" />
+    <h3 style="font-size:18px;letter-spacing:1px;">ZERO WITH MOUSE PAD<br><span style="font-size:13px;color:#aaa;">SIZE 31.5 × 15.7 IN</span></h3>
+    <span class="learn">LEARN MORE</span>
+  </a>
+</section>
+
+<section id="product" class="container" style="margin-top:120px;">
+  <h2 style="font-size:42px;letter-spacing:2px;margin-bottom:20px;">ZERO MOUSEPAD</h2>
+  <p style="font-size:18px;color:#444;margin-bottom:24px;">This product is currently reserved.</p>
+  <div style="display:inline-block;padding:14px 24px;border-radius:12px;background:#111;color:#fff;font-weight:600;margin-bottom:16px;">RESERVED FOR SPONSOR</div>
+  <div style="font-size:20px;font-weight:700;color:#b00000;">0 IN STOCK</div>
+</section>
+</main>
+
+  <footer>
+    © 2026 MinimalGear. All rights reserved.
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <img src="unnamed.jpg" alt="Black Mousepad Large" />
+  </div>
+
+  <script>
+    const img = document.getElementById('productImg');
+    const lightbox = document.getElementById('lightbox');
+
+    img.onclick = () => lightbox.style.display = 'flex';
+    lightbox.onclick = () => lightbox.style.display = 'none';
+  </script>
+
+</body>
+</html>
